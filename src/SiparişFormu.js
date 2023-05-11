@@ -64,13 +64,8 @@ const SiparisFormu = () => {
     const { value, checked } = e.target;
     const newArr = [...checkedEkMalzeme, value];
     if (checked) {
-      if (checkedState < 5) {
         newArr.push(value);
         setFiyat(fiyat + 5);
-      }
-      else {
-        setCheckedState(checkedState + 1)
-      }
     } else { SetCheckedEkMalzeme(newArr.filter((item) => item !== value)); }
 
 
@@ -89,11 +84,17 @@ const SiparisFormu = () => {
 
 
   const history = useHistory();
-  const handleSiparisVerClick = (e) => {
+  const handleSiparisVerClick = ( ) => {
+    axios.post('https://reqres.in/api/users', form)
+      .then(response => {
+        console.log(response.data);
+      })
+      .catch(error => {
+        console.error(error);
+      });
     history.push('./SiparişOnay');
   }
-
-
+  
 
   return (
     <div>
@@ -103,7 +104,7 @@ const SiparisFormu = () => {
       </div>
       <body className="order-pizza-body">
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginLeft: 'auto', marginRight: 'auto' }}>
-          <h2 style={{ marginRight: '0' }}>Positon Absolute Acı Pizza {fiyat}</h2>
+          <h2 style={{ marginRight: '0' }}>Positon Absolute Acı Pizza 85 TL</h2>
         </div>
         <p className="pizza-aciklama" >Pizza, İtalyan mutfağının dünya çapında en sevilen lezzetlerinden biridir. Pişmiş hamurun üzerine sürülen domates sosu ve çeşitli malzemelerle süslenen pizza, her damak tadına hitap edecek şekilde hazırlanabilir. Peynir, mantar, sucuk, jambon, zeytin, biber ve soğan gibi birçok malzemeyle zenginleştirilerek servis edilen pizza, sıcak ve lezzetli bir yemek seçeneği sunar.
         </p>
@@ -172,7 +173,7 @@ const SiparisFormu = () => {
                     name="ekMalzeme"
                     value={item}
                     onChange={changeHandlerEkMalzeme}></Input>
-                  <label htmlFor={index}>{item}</label>
+                  <Label htmlFor={index}>{item}</Label>
 
                 </div>
               )
