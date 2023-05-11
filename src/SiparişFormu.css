@@ -1,0 +1,94 @@
+.div-header {
+    background-color: #ce2829;
+    ;
+    padding: 0.1rem;
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Barlow', sans-serif;
+    font-size: 2rem;
+    color: #FAF7F2;
+}
+
+.order-pizza-body {
+    background-color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+
+.header-link {
+    font-size: 1rem;
+    padding-left: 10rem;
+    color: #5F5F5F;
+
+}
+
+.no-underline {
+    text-decoration: none;
+    color: #5F5F5F;
+}
+
+strong {
+    color: #FAF7F2;
+
+}
+
+.strong-ekMalzeme {
+    text-decoration-color: black;
+}
+
+
+h2 {
+    text-align: center;
+    margin-right: 14rem;
+}
+
+.pizza-aciklama {
+    font-size: 1rem;
+    color: #5F5F5F;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    text-align: start;
+}
+
+#boyutSec {
+    text-align: center;
+    margin-top: 5%;
+    margin-right: 30rem;
+    font-size: 1.2rem;
+}
+
+#hamurSec {
+    text-align: center;
+    margin-top: -6.5rem;
+    padding-left: 18rem;
+    margin-right: 10px;
+}
+
+.ekMalzeme {
+    text-align: center;
+    justify-content: center;
+    padding-left: 30rem;
+    padding-right: 30rem;
+}
+
+.siparis-notu {
+    justify-content: center;
+    display: flex ;
+    align-items: left;
+}
+.input-siparis-notu {
+    justify-content: center;
+    display: flex;
+    
+}
+.pizza-adet {
+    justify-content: center;
+    display: flex ;
+    align-items: left;
+}
+.input-pizza-adet {
+    justify-content: center;
+    display: flex;
+    
+}
