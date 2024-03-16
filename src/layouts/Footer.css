@@ -1,0 +1,134 @@
+.footer-div {
+  max-width: 1920px;
+  width: 100%;
+  height: 561.25px;
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.upper-footer-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 200px;
+}
+.left-div {
+  width: 960px;
+  padding-left: 412px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+.contact h1 {
+  font-family: "Londrina Solid", sans-serif;
+  color: white;
+  text-align: left;
+  font-size: 50px;
+  line-height: 50px;
+}
+.contact-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.location-img {
+  padding-bottom: 35px;
+}
+.contact-div p {
+  display: inline-block;
+  text-align: start;
+  padding-top: 15px;
+  padding-left: 10px;
+  color: white;
+  font-family: Barlow;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.sicacik-menuler-heading,
+.right-heading {
+  color: white;
+  font-family: Barlow;
+  font-size: 24px;
+  font-weight: 900;
+  padding-top: 110px;
+}
+.sicacik-menuler-heading {
+  padding-bottom: 40px;
+}
+.sicacik-menuler-p {
+  gap: 0.5rem;
+  color: white;
+}
+.right-div {
+  width: 960px;
+  padding-left: 250px;
+}
+.right-heading {
+  padding-bottom: 50px;
+}
+.insta-grid {
+  width: 320px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  padding-right: 312px;
+}
+.below-footer-div {
+  height: 90px;
+  max-width: 1920px;
+  width: 100%;
+  border-top: 1px ridge #5f5f5f;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 312px;
+}
+.below-footer-div p {
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 1620px) {
+  .footer-div {
+    height: 1000px;
+  }
+  .upper-footer-div {
+    margin-left: -700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+  }
+
+  .left-div {
+    width: 1000px;
+    padding-left: 200px;
+  }
+  .right-div {
+    width: 200px;
+    margin-left: 150px;
+  }
+  .below-footer-div {
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .left-div,
+  .right-div {
+    margin-left: 300px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .footer-div {
+    height: 920px;
+  }
+}

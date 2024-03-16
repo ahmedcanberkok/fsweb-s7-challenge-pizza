@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Londrina+Solid");
+@import url("https://fonts.googleapis.com/css2?family=Barlow");
 .App {
   text-align: center;
 }
@@ -7,6 +9,23 @@
   pointer-events: none;
 }
 
+.heading {
+  background-color: #ce2829;
+  color: white;
+  width: 1920px;
+  height: 157px;
+}
+h1 {
+  font-family: "Londrina Solid";
+  text-align: center;
+  padding-top: 75px;
+}
+
+.homePagefromLogo {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
